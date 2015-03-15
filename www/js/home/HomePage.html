@@ -1,0 +1,41 @@
+<ion-view>
+  <ion-content>
+ 	<div class="row" id="homeRow">
+	  <div class="col col-50">
+	 	 <img src={{home.profileImage}} 
+	 	 		width="100%" 
+	 	 		height="33%" 
+	 	 		ng-click="home.profile()">
+	  </div>
+	  <div class="col">
+	  	<img src={{home.friendImage}} 
+	  			width="100%" 
+	  			height="33%"
+	  			ng-click="home.friend()">
+	  </div>
+	</div>
+	<div class="row">
+		<div class="col">
+			<img src={{home.challengeImage}} 
+					width="100%" 
+					height="33%"
+					ng-click="home.challenge()">
+		</div>
+	</div>
+	<div class="row">
+	  <div class="col">
+	  	<img src={{home.bankImage}} 
+	  			width="100%" 
+	  			height="33%"
+	  			ng-click="home.bank()">
+	  </div>
+	  <div class="col">
+	  	<img src={{home.skillImage}} 
+	  			width="100%" 
+	  			height="33%"
+	  			ng-click="home.skill()">
+	  </div>
+	</div>
+ <!--    <img src={{home.image}}> -->
+  </ion-content>
+</ion-view>

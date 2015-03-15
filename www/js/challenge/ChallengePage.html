@@ -1,0 +1,18 @@
+<ion-view>
+	<ion-content>
+	  <ion-list>
+	    <ion-item ng-repeat="content in challenge.contents">
+	      <a class="item" href="#" >
+	        <!-- <img src="{{content.photo}}"> -->
+	        <h1>{{content.title}}</h1>
+		        <h2>入場費:
+		         	<i class="icon ion-social-usd-outline">
+		        		{{content.entFeed}}
+		        	</i>
+		        </h2>
+	       	<h4>{{content.time}}秒 {{content.round}}回合</h4>
+	      </a>
+	    </ion-item>
+	  </ion-list>
+	</ion-content>
+</ion-view>
