@@ -3,8 +3,9 @@
 		<ion-list>
 			<ion-item ng-repeat="content in skill.contents">
 				<a class="item item-thumbnail-left" href="#" >
+				<i class="icon {{content.icon}}"></i>
 				<!-- <img src="{{content.photo}}"> -->
-				<h2>{{content.title}}</h2>
+				<h2 class="light">{{content.title}}</h2>
 				</a>
 			</ion-item>
 		</ion-list>

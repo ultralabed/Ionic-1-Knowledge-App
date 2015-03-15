@@ -1,5 +1,11 @@
 /* Empty. Add your own CSS if you like */
-#homeRow {
-  /*height: 10%;*/
-  height: 33% !important;
+.background, .background .pane, .background .item, .background .item-complex .item-content 
+{
+    background-color: black;
+}
+
+.icon
+{
+	background: black;
+	color:white;
 }
