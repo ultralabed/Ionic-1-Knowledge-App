@@ -3,14 +3,27 @@ angular
 	.controller('HomeController', HomeController)
 	function HomeController($state, $scope, $ionicModal, $ionicSideMenuDelegate, $ionicSlideBoxDelegate ) {
 		var vm = this;
-		//vm.image = "/img/HomePage.jpg"
-		
+		vm.profileData = {};
 		vm.profileImage = "img/profile.png";
 		vm.friendImage = "img/friend.png";
 		vm.challengeImage = "img/challenge.png";
 		vm.bankImage = "img/bank.png";
 		vm.skillImage = "img/skill.jpg";
 		vm.userImage= "img/userImage.jpg";
+		vm.profileData = { level: "5",
+							exp: "100",
+							totalBattle: "200",
+							totalWin: "100",
+							winRatial: "50",
+							acumulateMoney: "100000",
+							correctAnswer: "800",
+							gameHost: "10",
+							moneyGain: "10",
+							pointGain: "10",
+							expGain: "10"
+							}
+
+		
 		vm.profile = function() {
 			console.log("profile clicked!!!")
 		}
@@ -34,39 +47,39 @@ angular
 			console.log("skill clicked!!!")
 		}
 
- 	$ionicModal.fromTemplateUrl('js/home/ProfilePage.html', {
-        scope: $scope,
-        animation: 'slide-in-up'
-      }).then(function(modal) {
-        $scope.modal = modal;
-      });
+	 	$ionicModal.fromTemplateUrl('js/home/ProfilePage.html', {
+	        scope: $scope,
+	        animation: 'slide-in-up'
+	      }).then(function(modal) {
+	        $scope.modal = modal;
+	      });
 
-      $scope.openModal = function() {
-        $scope.modal.show();
-        // Important: This line is needed to update the current ion-slide's width
-        // Try commenting this line, click the button and see what happens
-        $ionicSlideBoxDelegate.update();
-      };
+	      $scope.openModal = function() {
+	        $scope.modal.show();
+	        // Important: This line is needed to update the current ion-slide's width
+	        // Try commenting this line, click the button and see what happens
+	        $ionicSlideBoxDelegate.update();
+	      };
 
-      $scope.closeModal = function() {
-        $scope.modal.hide();
-      };
+	      $scope.closeModal = function() {
+	        $scope.modal.hide();
+	      };
 
-      // Cleanup the modal when we're done with it!
-      $scope.$on('$destroy', function() {
-        $scope.modal.remove();
-      });
-      // Execute action on hide modal
-      $scope.$on('modal.hide', function() {
-        // Execute action
-      });
-      // Execute action on remove modal
-      $scope.$on('modal.removed', function() {
-        // Execute action
-      });
-      $scope.$on('modal.shown', function() {
-        console.log('Modal is shown!');
-      });
+	      // Cleanup the modal when we're done with it!
+	      $scope.$on('$destroy', function() {
+	        $scope.modal.remove();
+	      });
+	      // Execute action on hide modal
+	      $scope.$on('modal.hide', function() {
+	        // Execute action
+	      });
+	      // Execute action on remove modal
+	      $scope.$on('modal.removed', function() {
+	        // Execute action
+	      });
+	      $scope.$on('modal.shown', function() {
+	        console.log('Modal is shown!');
+	      });
 
-      // Call this functions if you need to manually control the slides
+	      // Call this functions if you need to manually control the slides
 	}

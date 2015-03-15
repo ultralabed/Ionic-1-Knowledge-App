@@ -5,28 +5,30 @@
       </ion-header-bar>
       <ion-content scroll="false">
         <div class="row" id="homeRow">
-          <div class="col col-40">
+          <div class="col">
             <img src={{home.userImage}}
-                  width="40%"
+                  width="100%"
                   height="">
             <br>
-            <button class="button button-energized" ng-click="closeModal()">關閉</button>
+            <button class="button button-energized" 
+                    ng-click="">頭像設定</button>
             <br>
-            <button class="button button-energized" ng-click="closeModal()">關閉</button>
+            <button class="button button-energized" 
+                    ng-click="">系統設定</button>
           </div>
           <div class="col" >
-            <h4 class="light">等級:5</h4>
-            <h4 class="light">經驗:0/100</h4>
+            <h4 class="light">等級:{{home.profileData.level}}</h4>
+            <h4 class="light">經驗:{{home.profileData.exp}}</h4>
             <br>
-            <h4 class="light">戰績:100戰100勝</h4>
-            <h4 class="light">勝率:100.0%</h4>
-            <h4 class="light">累積獎金:100000</h4>
-            <h4 class="light">答對題數:10000</h4>
-            <h4 class="light">擊敗關主:100</h4>
+            <h4 class="light">戰績:{{home.profileData.totalBattle}}戰{{home.profileData.totalWin}}勝</h4>
+            <h4 class="light">勝率:{{home.profileData.winRatial}}%</h4>
+            <h4 class="light">累積獎金:{{home.profileData.acumulateMoney}}</h4>
+            <h4 class="light">答對題數:{{home.profileData.correctAnswer}}</h4>
+            <h4 class="light">擊敗關主:{{home.profileData.gameHost}}</h4>
             <br>
-            <h4 class="light">金幣加成:10%</h4>
-            <h4 class="light">分數加成:10%</h4>
-            <h4 class="light">經驗加成:10%</h4>
+            <h4 class="light">金幣加成:{{home.profileData.moneyGain}}%</h4>
+            <h4 class="light">分數加成:{{home.profileData.pointGain}}%</h4>
+            <h4 class="light">經驗加成:{{home.profileData.expGain}}%</h4>
           </div>            
         </div>
         <button class="button button-energized" ng-click="closeModal()">關閉</button>
