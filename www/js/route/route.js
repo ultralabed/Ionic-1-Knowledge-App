@@ -36,5 +36,5 @@ angular
 			controller: 'SkillController as skill'
 		})		
 
-		 $urlRouterProvider.otherwise('/home');
+		 $urlRouterProvider.otherwise('/start');
 	}

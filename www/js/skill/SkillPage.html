@@ -1,11 +1,19 @@
 <ion-view>
+	<ion-nav-bar class="bar-dark" >
+		<ion-nav-back-button>
+		回上一頁
+		</ion-nav-back-button>
+    </ion-nav-bar>
 	<ion-content>
 		<ion-list>
 			<ion-item ng-repeat="content in skill.contents">
 				<a class="item item-icon-left" href="#" >
-				<i class="icon {{content.icon}} icon-left"></i>
-				<!-- <img src="{{content.photo}}"> -->
-				<h2 class="light">{{content.title}}</h2>
+					<i class="icon {{content.icon}} icon-left"></i>
+					<h2 class="light">{{content.title}}</h2>
+					<h4 class="light">
+						{{content.detail.descrpt}}
+						{{content.detail.gain}}
+					</h4>
 				</a>
 			</ion-item>
 		</ion-list>
