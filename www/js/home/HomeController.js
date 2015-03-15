@@ -5,12 +5,12 @@ angular
 		var vm = this;
 		//vm.image = "/img/HomePage.jpg"
 		
-		vm.profileImage = "/img/profile.png";
-		vm.friendImage = "/img/friend.png";
-		vm.challengeImage = "/img/challenge.png";
-		vm.bankImage = "/img/bank.png";
-		vm.skillImage = "/img/skill.jpg";
-		vm.userImage= "/img/userImage.jpg";
+		vm.profileImage = "img/profile.png";
+		vm.friendImage = "img/friend.png";
+		vm.challengeImage = "img/challenge.png";
+		vm.bankImage = "img/bank.png";
+		vm.skillImage = "img/skill.jpg";
+		vm.userImage= "img/userImage.jpg";
 		vm.profile = function() {
 			console.log("profile clicked!!!")
 		}

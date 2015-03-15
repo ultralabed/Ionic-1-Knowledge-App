@@ -2,13 +2,13 @@
   <ion-content>
  	<div class="row" id="homeRow">
 	  <div class="col">
-	 	 <img src={{home.profileImage}} 
+	 	 <img ng-src={{home.profileImage}} 
 	 	 		width="100%" 
 	 	 		height="33%" 
 	 	 		ng-click="openModal()">
 	  </div>
 	  <div class="col">
-	  	<img src={{home.friendImage}} 
+	  	<img ng-src={{home.friendImage}} 
 	  			width="100%" 
 	  			height="33%"
 	  			ng-click="home.friend()">
@@ -16,7 +16,7 @@
 	</div>
 	<div class="row">
 		<div class="col">
-			<img src={{home.challengeImage}} 
+			<img ng-src={{home.challengeImage}} 
 					width="100%" 
 					height="33%"
 					ng-click="home.challenge()">
@@ -24,13 +24,13 @@
 	</div>
 	<div class="row">
 	  <div class="col">
-	  	<img src={{home.bankImage}} 
+	  	<img ng-src={{home.bankImage}} 
 	  			width="100%" 
 	  			height="33%"
 	  			ng-click="home.bank()">
 	  </div>
 	  <div class="col">
-	  	<img src={{home.skillImage}} 
+	  	<img ng-src={{home.skillImage}} 
 	  			width="100%" 
 	  			height="33%"
 	  			ng-click="home.skill()">
