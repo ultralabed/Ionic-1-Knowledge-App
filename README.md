@@ -1,10 +1,23 @@
-# ionicKnowledge
-Bug Fix each page to make it fit to the screen size.
-    Fix profile page to show transparent back ground.
-ToDo    
-    Add local storage to data and make can be called in the future.
-    Add controller and model to deal with data.
-    Write data to local storage.
+Ionic Knowledge App
+================
 
-Feature
-    Add multi connection to battle.
+Implement [知識王][src] by Ionic 
+------------------------------------------------
+
+App feature
+
+    *  Same homescreen
+
+ToDo
+
+    *  Add local storage to data for future calls.
+    
+    *  Add controller and model to deal with data.
+    
+    *  Write data to local storage.
+    
+Future
+
+    *  Add multi connection to battle.
+
+[src]: https://goo.gl/hvwBTy
